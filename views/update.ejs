@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" id="update-form">
+        <input type="hidden" id="id" name="id" value="<%= user.id %>">
+    <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" value="<%= user.firstname %>" required>
+    </div>
+    <div>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" value="<%= user.lastname %>"required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= user.email %>"required>
+    </div>
+    <div>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" name="phonenumber" value="<%= user.phonenumber %>"required>
+    </div>
+    <div>
+        <button type="submit" id="submit">Submit</button>
+    </div>
+    </form>
+<script src="/js/script.js"></script>
+</body>
+</html>
